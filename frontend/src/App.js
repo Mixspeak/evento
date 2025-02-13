@@ -6,7 +6,7 @@ function App() {
     const [telefono, setTelefono] = useState('');
 
     const confirmarAsistencia = async () => {
-        await axios.post('https://tu-api-gateway-url.com/confirmar-asistencia', { nombre, telefono });
+        await axios.post('https://1j06tqxtvb.execute-api.us-east-1.amazonaws.com/dev/confirmar-asistencia', { nombre, telefono });
         alert('¡Asistencia confirmada! Se ha enviado un mensaje de WhatsApp.');
     };
 
